@@ -93,7 +93,7 @@ def test_on_train_dataset(vis_per_img=10):
             image = ImgFormat.ImgColorFormat(image, from_color="RGB", to_color="BGR")
             image = visualize_label(image, my_labels, color=(0, 255, 0))
             image = visualize_label(image, sample["label"]["coor"], color=(255, 0, 0))
-            cv2.imwrite("img_%d.jpg" % i, image)
+            cv2.imwrite("test_output/img_%d.jpg" % i, image)
         true_pos += res[0]
         false_pos += res[1]
         false_neg += res[2]

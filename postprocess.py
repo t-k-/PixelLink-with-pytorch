@@ -77,7 +77,7 @@ def mask_to_box(pixel_mask, link_mask, neighbors=8, scale=4):
                 pass
                 # print("<150")
                 # continue
-            box_mask, contours, _ = cv2.findContours(box_mask, mode=cv2.RETR_EXTERNAL, method=cv2.CHAIN_APPROX_NONE)
+            contours, _ = cv2.findContours(box_mask, mode=cv2.RETR_EXTERNAL, method=cv2.CHAIN_APPROX_NONE)
             # print(contours[0])
             bounding_box = cv2.minAreaRect(contours[0])
             bounding_box = cv2.boxPoints(bounding_box)

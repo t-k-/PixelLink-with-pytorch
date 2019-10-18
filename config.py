@@ -32,7 +32,10 @@ train_images_dir = "train_images/images/"
 train_labels_dir = "train_images/ground_truth/"
 saving_model_dir = "models/"
 retrain_model_index = 26200 # retrain from which model, e.g. ${saving_model_dir}/156600.mdl
-test_model_index = 43800 # test for which model, e.g. ${saving_model_dir}/156600.mdl
+
+# test_model_index = 43800 # test for which model, e.g. ${saving_model_dir}/156600.mdl
+test_model_index = 9800
+
 test_batch = 1
 # saving_model_dir1 = "standard_models/"
 # saving_model_dir2 = "change_models/"
