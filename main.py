@@ -17,7 +17,7 @@ import time
 import argparse
 import ImgLib.ImgShow as ImgShow
 import ImgLib.ImgTransform as ImgTransform
-import moduletest.test_postprocess as test_postprocess
+# import moduletest.test_postprocess as test_postprocess
 from test_model import test_on_train_dataset
 
 # os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
